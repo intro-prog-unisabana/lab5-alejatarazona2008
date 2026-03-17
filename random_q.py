@@ -1,5 +1,7 @@
-random.seed(123)
-start = int(input("Enter the start value:\n"))
-end = int(input("Enter the end value:\n"))
-random_number = random.randint(start, end)
-print(f"Generated random number: {random_number}")
+import random
+
+def seed_secret_numbers(seed):
+    random.seed(seed)
+
+def generate_secret_number(start=1, end=100):
+    return random.randint(start, end)
